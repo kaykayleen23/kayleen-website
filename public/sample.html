@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <section>
+    <div class="flex">
+      <div class="w-2/12 flex items-center ">
+        <div class="w-full text-right">
+          <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-md mr-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="w-10/12 overflow-hidden" id="sliderContainer">
+        <ul id="slider" class="flex w-full">
+          <li class="w-96 p-5">
+            <div class="border rounded-lg p-5 h-full">
+              <img src="/images/kayleen.jpg" alt="" class="w-50 object-cover rounded-md">
+              <h2 class="mt-2 text-2xl font-bold text-gray-700">1</h2>
+              <p class="mt-2 text-gray-500">paragraph</p>
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="border rounded-lg p-5 h-full">
+              <img src="/images/kayleen.jpg" alt="" class="w-full h-50 object-cover rounded-md">
+              <h2 class="mt-2 text-2xl font-bold text-gray-700">2</h2>
+              <p class="mt-2 text-gray-500">paragraph</p>
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="border rounded-lg p-5">
+              <img src="/images/kayleen.jpg" alt="" class="w-full h-50 object-cover rounded-md">
+              <h2 class="mt-2 text-2xl font-bold text-gray-700">3</h2>
+              <p class="mt-2 text-gray-500">paragraph</p>
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="border rounded-lg p-5">
+              <img src="/images/kayleen.jpg" alt="" class="w-full h-50 object-cover rounded-md">
+              <h2 class="mt-2 text-2xl font-bold text-gray-700">4</h2>
+              <p class="mt-2 text-gray-500">paragraph</p>
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="border rounded-lg p-5">
+              <img src="/images/kayleen.jpg" alt="" class="w-full h-50 object-cover rounded-md">
+              <h2 class="mt-2 text-2xl font-bold text-gray-700">5</h2>
+              <p class="mt-2 text-gray-500">paragraph</p>
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="border rounded-lg p-5">
+              <img src="/images/kayleen.jpg" alt="" class="w-full h-50 object-cover rounded-md">
+              <h2 class="mt-2 text-2xl font-bold text-gray-700">6</h2>
+              <p class="mt-2 text-gray-500">paragraph</p>
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="border rounded-lg p-5">
+              <img src="/images/kayleen.jpg" alt="" class="w-full h-50 object-cover rounded-md">
+              <h2 class="mt-2 text-2xl font-bold text-gray-700">7</h2>
+              <p class="mt-2 text-gray-500">paragraph</p>
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="border rounded-lg p-5">
+              <img src="/images/kayleen.jpg" alt="" class="w-full h-50 object-cover rounded-md">
+              <h2 class="mt-2 text-2xl font-bold text-gray-700">8</h2>
+              <p class="mt-2 text-gray-500">paragraph</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="w-2/12 flex items-center ">
+        <div class="w-full">
+          <button onclick="next()" class="p-3 rounded-full bg-white border border-gray-100 shadow-md ml-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="main.js">
+  </script>
+</body>
+
+</html>

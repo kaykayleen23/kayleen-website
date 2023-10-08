@@ -1,0 +1,330 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins]">
+  <!--header-->
+  <div class="">
+    <header class="absolute inset-x-0 top-0 z-50 flex items-center justify-center">
+      <nav class="flex items-center justify-center p-6 lg:px-8 fixed top-3 w-80 bg-white rounded-full"
+        aria-label="Global">
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="#home" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-500">Home</a>
+          <a href="#skills" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-500">Skills</a>
+          <a href="#projects" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-500">Projects</a>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#home"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                <a href="#skills"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Skills</a>
+                <a href="#projects"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Projects</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="relative isolate px-6 pt-14">
+      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true">
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+      </div>
+      <div class="mx-auto py-12" id="home">
+        <div class="overflow-hidden">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+              class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <div class="lg:pr-8 lg:pt-4">
+                <div class="lg:max-w-lg">
+                  <p class="text-indigo-500">Introduction</p>
+                  <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Hi, I'm Kayleen.</h1>
+                  <p class="mt-6 text-md leading-8 text-gray-600">I am a computer engineering graduate. I have a strong
+                    passion for the technologies related to the data base construction and UX.</p>
+                  <p class="mt-6 text-md leading-8 text-gray-600">During my free time, I love to listen to music as well
+                    as play the guitar.</p>
+                  <p class="mt-6 text-md leading-8 text-gray-600">I'm genuinely enthusiastic about expanding my
+                    knowledge and honing my skills. I believe that collaborating with experienced individuals would
+                    provide invaluable insights that can contribute to my professional growth.</p>
+                  <div class="grid grid-cols-4 mt-5">
+                    <div class="flex item-center justify-center ">
+                      <div
+                        class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <a href="https://www.facebook.com/profile.php?id=100010457409568" class=""><img
+                            src="/images/facebook.png" alt="fb" class="w-7 "></a>
+                      </div>
+                    </div>
+                    <div class="flex item-center justify-center">
+                      <div
+                        class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <a href="https://github.com/kaykayleen23"><img src="/images/github.png" alt="github"
+                            class="w-7 "></a>
+                      </div>
+                    </div>
+                    <div class="flex item-center justify-center">
+                      <div
+                        class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <a href="https://www.linkedin.com/in/kayleen-esconde-a09a1426a/"><img src="/images/linkedin.png"
+                            alt="linkedin" class="w-7 "></a>
+                      </div>
+                    </div>
+                    <div class="flex item-center justify-center">
+                      <div
+                        class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <a href="mailto:kayleenash.esconde@gmail.com"><img src="/images/gmail.png" alt="email"
+                            class="w-7 "></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="/images/kayleen.jpg" alt="Kayleen" class="w-96 rounded-xl shadow-2xl">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+      aria-hidden="true">
+      <div
+        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+  </div>
+
+  <!--skills-->
+  <div class="-6 pt-14">
+    <div class="mx-auto py-16" id="skills">
+      <div class="overflow-hidden">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto">
+            <div class="mx-auto" id="">
+              <p class="text-indigo-500">What I Can Do</p>
+              <h2 class="my-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl">Skills</h2>
+              <!--carousel-->
+              <div class="flex items-center justify-center">
+                <div class=" flex items-center ">
+                  <div class="w-full text-right">
+                    <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-md mr-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="w-10/12 overflow-hidden" id="sliderContainer">
+                  <ul id="slider" class="flex w-full">
+                    <li class="w-96 p-5">
+                      <div class="border rounded-lg p-5 h-full">
+                        <div class="flex items-center justify-center">
+                          <img src="/images/html.png" alt="" class="w-40 object-cover rounded-md">
+                        </div>
+                        <h3 class="mt-2 text-md font-bold text-gray-700">HTML</h3>
+                        <p class="mt-2 text-sm text-gray-500">I'm proficient in HTML, utilizing it to
+                          create well-structured and visually appealing web pages. My expertise includes crafting clean
+                          and
+                          semantic code,
+                          ensuring optimal user experiences and adherence to industry standards.</p>
+                      </div>
+                    </li>
+                    <li class="w-96 p-5">
+                      <div class="border rounded-lg p-5 h-full">
+                        <div class="flex items-center justify-center">
+                          <img src="/images/css-3.png" alt="" class="w-40 object-cover rounded-md">
+                        </div>
+                        <h2 class="mt-2 text-md font-bold text-gray-700">CSS</h2>
+                        <p class="mt-2 text-sm text-gray-500">Proficient in CSS, I design visually
+                          engaging and responsive interfaces for modern aesthetics across devices.</p>
+                      </div>
+                    </li>
+                    <li class="w-96 p-5">
+                      <div class="border rounded-lg p-5 h-full">
+                        <div class="flex items-center justify-center">
+                          <img src="/images/mysql.png" alt="" class="w-40 object-cover rounded-md">
+                        </div>
+                        <h2 class="mt-2 text-md font-bold text-gray-700">MySQL</h2>
+                        <p class="mt-2 text-sm text-gray-500">I'm skilled in MySQL, designing
+                          efficient
+                          databases and crafting optimized queries for scalable data solutions.</p>
+                      </div>
+                    </li>
+                    <li class="w-96 p-5">
+                      <div class="border rounded-lg p-5 h-full">
+                        <div class="flex items-center justify-center">
+                          <img src="/images/python.png" alt="" class="w-40 object-cover rounded-md">
+                        </div>
+                        <h2 class="mt-2 text-md font-bold text-gray-700">Python</h2>
+                        <p class="mt-2 text-sm text-gray-500">Skilled in Python, I develop efficient
+                          solutions for various applications, leveraging its readability and flexibility.</p>
+                      </div>
+                    </li>
+                    <li class="w-96 p-5">
+                      <div class="border rounded-lg p-5 h-full">
+                        <div class="flex items-center justify-center">
+                          <img src="/images/php.png" alt="" class="w-40 object-cover rounded-md">
+                        </div>
+                        <h2 class="mt-2 text-md font-bold text-gray-700">PHP</h2>
+                        <p class="mt-2 text-sm text-gray-500">Skilled in PHP, I create dynamic and
+                          scalable web applications, leveraging its versatility for robust solutions.</p>
+                      </div>
+                    </li>
+                    <li class="w-96 p-5">
+                      <div class="border rounded-lg p-5 h-full">
+                        <div class="flex items-center justify-center">
+                          <img src="/images/js.png" alt="" class="w-40 object-cover rounded-md">
+                        </div>
+                        <h2 class="mt-2 text-md font-bold text-gray-700">Javascript</h2>
+                        <p class="mt-2 text-sm text-gray-500">Experienced in JavaScript, I create
+                          dynamic and interactive web applications for enhanced user experiences.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class=" flex items-center ">
+                  <div class="w-full">
+                    <button onclick="next()" class="p-3 rounded-full bg-white border border-gray-100 shadow-md ml-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--projects-->
+    <div class="px-6 pt-14">
+      <div class="mx-auto py-16" id="projects">
+        <div class="overflow-hidden">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto">
+              <p class="text-indigo-500">What I've Created</p>
+              <h2 class="my-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl">Projects</h2>
+              <div class="grid grid-cols-3 gap-4 content-center mt-6">
+                <button class="hover:shadow-lg transition ease-out duration-500 rounded-md p-5 mb-5" href="">
+                  <div class="flex item-center justify-center">
+                    image
+                    <img src="" alt="" class="">
+                  </div>
+                  <p class="text-md leading-8 text-black-600 text-center">title</p>
+                  <p class="mt-2 text-sm leading-8 text-gray-600 text-center">I'm proficient in HTML, utilizing it to
+                    create well-structured and visually appealing web pages. My expertise includes crafting clean and
+                    semantic code,
+                    ensuring optimal user experiences and adherence to industry standards.</p>
+                </button>
+                <button class="hover:shadow-lg transition ease-out duration-500 rounded-md p-5 mb-5">
+                  <div class="flex item-center justify-center">
+                    image
+                    <img src="" alt="" class="">
+                  </div>
+                  <p class="text-md leading-8 text-black-600 text-center">title</p>
+                  <p class="mt-2 text-sm leading-8 text-gray-600 text-center">I'm proficient in HTML, utilizing it to
+                    create well-structured and visually appealing web pages. My expertise includes crafting clean and
+                    semantic code,
+                    ensuring optimal user experiences and adherence to industry standards.</p>
+                </button>
+                <button class="hover:shadow-lg transition ease-out duration-500  rounded-md p-5 mb-5">
+                  <div class="flex item-center justify-center">
+                    image
+                    <img src="" alt="" class="">
+                  </div>
+                  <p class="text-lg leading-8 text-black-600 text-center">title</p>
+                  <p class="mt-2 text-sm leading-8 text-gray-600 text-center">I'm proficient in HTML, utilizing it to
+                    create well-structured and visually appealing web pages. My expertise includes crafting clean and
+                    semantic code,
+                    ensuring optimal user experiences and adherence to industry standards.</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="flex item-center justify-center">
+      <div class="px-6 w-4/5 border-t-2">
+        <div class="mx-auto py-10">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+              class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#home"
+                  class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-500 pt-1">Home</a>
+                <a href="#skills"
+                  class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-500 pt-1">Skills</a>
+                <a href="#projects"
+                  class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-500 pt-1">Projects</a>
+              </div>
+              <div>
+                <p class=" text-sm leading-8 text-gray-400 text-right">© 2023 Kayleen Ashly Esconde</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
