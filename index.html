@@ -16,6 +16,40 @@
 
 <body class="font-[Poppins]">
   <!--header-->
+  <!--<nav class="p-2 shadow bg-gray-50 md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+                <span class="text-xl cursor-pointer">
+                    <img class="h-12 inline" src="/images/icon.png">
+                    ExchangeBuddy
+                </span>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul
+                class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-m hover:text-cyan-500 duration-500">HOME</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-m hover:text-cyan-500 duration-500">SERVICE</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-m hover:text-cyan-500 duration-500">ABOUT</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-m hover:text-cyan-500 duration-500">CONTACT</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-m hover:text-cyan-500 duration-500">BLOG'S</a>
+                </li>
+                <button class="bg-cyan-400 text-white duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+                    Get started
+                </button>
+                <h2 class=""></h2>
+            </ul>
+        </nav>-->
   <div class="">
     <header class="absolute inset-x-0 top-0 z-50 flex items-center justify-center">
       <nav class="flex items-center justify-center p-6 lg:px-8 fixed top-3 w-80 bg-white rounded-full"
@@ -111,8 +145,8 @@
                     <div class="flex item-center justify-center">
                       <div
                         class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <a href="https://www.linkedin.com/in/kayleen-esconde-a09a1426a/"><img src="./images/linkedin.png"
-                            alt="linkedin" class="w-7 "></a>
+                        <a href="https://www.linkedin.com/in/kayleen-esconde-a09a1426a/"><img
+                            src="./images/linkedin.png" alt="linkedin" class="w-7 "></a>
                       </div>
                     </div>
                     <div class="flex item-center justify-center">
@@ -260,7 +294,19 @@
               <p class="text-indigo-500">What I've Created</p>
               <h2 class="my-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl">Projects</h2>
               <div class="grid grid-cols-3 gap-4 content-center mt-6">
-                <button class="hover:shadow-lg transition ease-out duration-500 rounded-md p-5 mb-5" href="">
+                <a class="hover:shadow-lg transition ease-out duration-500 rounded-md p-5 mb-5"
+                  href="https://kaykayleen23.github.io/random-pw/">
+                  <div class="flex item-center justify-center mb-2">
+                    <img src="/images/pw-gen.jpg" alt="" class="">
+                  </div>
+                  <p class="text-md leading-8 text-black-600 text-center">Password Generator</p>
+                  <p class="mt-2 text-sm leading-8 text-gray-600 text-center">This allows you to customize and generate
+                    a password to your
+                    liking and allows you to copy it to your clipboard. For this project, I used HTML, CSS, and
+                    JavaScript.
+                  </p>
+                </a>
+                <!--<a class="hover:shadow-lg transition ease-out duration-500 rounded-md p-5 mb-5" href="#">
                   <div class="flex item-center justify-center">
                     image
                     <img src="" alt="" class="">
@@ -270,19 +316,8 @@
                     create well-structured and visually appealing web pages. My expertise includes crafting clean and
                     semantic code,
                     ensuring optimal user experiences and adherence to industry standards.</p>
-                </button>
-                <button class="hover:shadow-lg transition ease-out duration-500 rounded-md p-5 mb-5">
-                  <div class="flex item-center justify-center">
-                    image
-                    <img src="" alt="" class="">
-                  </div>
-                  <p class="text-md leading-8 text-black-600 text-center">title</p>
-                  <p class="mt-2 text-sm leading-8 text-gray-600 text-center">I'm proficient in HTML, utilizing it to
-                    create well-structured and visually appealing web pages. My expertise includes crafting clean and
-                    semantic code,
-                    ensuring optimal user experiences and adherence to industry standards.</p>
-                </button>
-                <button class="hover:shadow-lg transition ease-out duration-500  rounded-md p-5 mb-5">
+                </a>
+                <a class="hover:shadow-lg transition ease-out duration-500  rounded-md p-5 mb-5">
                   <div class="flex item-center justify-center">
                     image
                     <img src="" alt="" class="">
@@ -292,7 +327,7 @@
                     create well-structured and visually appealing web pages. My expertise includes crafting clean and
                     semantic code,
                     ensuring optimal user experiences and adherence to industry standards.</p>
-                </button>
+                </a>-->
               </div>
             </div>
           </div>
@@ -324,6 +359,14 @@
       </div>
     </div>
     <script src="./public/main.js">
+    </script>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add(
+          'opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove(
+          'opacity-100'))
+      }
     </script>
 </body>
 
